@@ -1,5 +1,5 @@
 {% set name = "openmm-ml" %}
-{% set version = "1.7" %}
+{% set version = "1.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   git_url: https://github.com/openmm/{{ name }}.git
-  git_rev: "d50a6d5"
+  git_rev: "a7fb40e"
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
@@ -21,7 +21,7 @@ requirements:
     - setuptools
   run:
     - numpy
-    - openmm >=8.5.2
+    - openmm >=8.6.1
     - python >={{ python_min }}
     - setuptools
 
